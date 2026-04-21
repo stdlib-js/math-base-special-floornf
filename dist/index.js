@@ -1,0 +1,5 @@
+"use strict";var _=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var E=_(function(F,o){
+var t=require('@stdlib/math-base-assert-is-nanf/dist'),f=require('@stdlib/math-base-assert-is-infinitef/dist'),q=require('@stdlib/math-base-special-powf/dist'),I=require('@stdlib/math-base-special-absf/dist'),s=require('@stdlib/math-base-special-floorf/dist'),M=require('@stdlib/constants-float32-max-safe-integer/dist'),n=require('@stdlib/constants-float32-max-base10-exponent/dist'),X=require('@stdlib/constants-float32-min-base10-exponent/dist'),A=require('@stdlib/constants-float32-min-base10-exponent-subnormal/dist'),c=require('@stdlib/constants-float32-ninf/dist'),i=require('@stdlib/number-float64-base-to-float32/dist'),p=M+1,N=i(1e38),v=i(0);function P(r,e){var u,a;return r=i(r),t(r)||t(e)||f(e)?NaN:f(r)||r===v||e<A||I(r)>p&&e<=0?r:e>n?r>=v?v:c:e<X?(u=q(i(10),-(e+n)),a=i(i(r*N)*u),f(a)?r:i(i(s(a)/N)/u)):(u=q(i(10),-e),a=i(r*u),f(a)?r:i(s(a)/u))}o.exports=P
+});var R=E();module.exports=R;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
